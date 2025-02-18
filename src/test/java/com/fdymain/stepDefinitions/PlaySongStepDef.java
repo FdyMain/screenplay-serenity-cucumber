@@ -47,7 +47,6 @@ public class PlaySongStepDef {
         );
     }
 
-
     @After
     public void closeBrowser() {
         if (driver != null) {

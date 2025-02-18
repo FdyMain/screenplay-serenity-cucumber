@@ -11,5 +11,5 @@ import org.junit.runner.RunWith;
         glue = "com.fdymain.stepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class Runner {
+public class RunnerTest {
 }
