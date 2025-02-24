@@ -14,7 +14,7 @@ public class SelectSongTask implements Task {
         );
     }
 
-    public static SelectSongTask selectSong(){
-        return  instrumented(SelectSongTask.class);
+    public static SelectSongTask selectSong() {
+        return instrumented(SelectSongTask.class);
     }
 }
