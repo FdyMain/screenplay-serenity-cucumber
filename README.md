@@ -2,7 +2,7 @@
 
 ## Estructura del Proyecto
 
-[!IMPORTANT]
+.[!IMPORTANT].
 
 ```bash
 screenplay-serenity-cucumber/
