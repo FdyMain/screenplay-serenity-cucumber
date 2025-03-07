@@ -21,6 +21,4 @@ public class HomeSearchTask implements Task {
     public static HomeSearchTask searchSong(){
         return instrumented(HomeSearchTask.class);
     }
-
-
 }

@@ -2,8 +2,6 @@
 
 ## Estructura del Proyecto
 
-.[!IMPORTANT].
-
 ```bash
 screenplay-serenity-cucumber/
 ├── pom.xml
@@ -11,7 +9,7 @@ screenplay-serenity-cucumber/
     ├── main
     │   └── java
     │       └── com
-    │           └── fdymain
+    │           └── company
     │               ├── interactions     (Clases de Interactions del patrón Screenplay)
     │               ├── questions        (Clases de Questions del patrón Screenplay)
     │               ├── tasks            (Clases de Tasks del patrón Screenplay)
@@ -19,15 +17,13 @@ screenplay-serenity-cucumber/
     └── test
         ├── java
         │   └── com
-        │       └── fdymain
+        │       └── company
         │           ├── runners
         │           │   └── RunnerTest.java            (Clase Runner para ejecutar Cucumber + Serenity)
         │           └── stepDefinitions                        
         │               ├── Hooks.java
-        │               └── PlaySongStepDefinition.java (Clases de Step Definitions de Cucumber)
+        │               └── cpStepDefinition.java (Clases de Step Definitions de Cucumber)
         └── resources
-            ├── features            
-            │   ├── autoPlay.feature
-            │   ├── volumeControl.feature           
-            │   └── playSong.feature                   (Archivos .feature con escenarios de prueba)
+            ├── features                       
+            │   └── cp.feature                   (Archivos .feature con escenarios de prueba)
             └── serenity.config                        (Archivo de configuración de Serenity)

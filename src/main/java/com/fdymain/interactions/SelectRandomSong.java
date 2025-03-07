@@ -7,13 +7,13 @@ import net.serenitybdd.screenplay.Interaction;
 import java.util.List;
 import java.util.Random;
 
-import static com.fdymain.UI.SongListUI.LIST_SONGS;
+import static com.fdymain.UI.SongListUI.LIST_SONGS_TWO;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SelectRandomSong implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        List<WebElementFacade> listSong = LIST_SONGS.resolveAllFor(actor);
+        List<WebElementFacade> listSong = LIST_SONGS_TWO.resolveAllFor(actor);
 
         Random random= new Random();
         int index = random.nextInt(listSong.size());
