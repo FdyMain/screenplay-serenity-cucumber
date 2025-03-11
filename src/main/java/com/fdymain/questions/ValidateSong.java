@@ -15,7 +15,9 @@ public class ValidateSong implements Question<Boolean>{
         WebElementFacade elementTitle = LBL_NAME_SONG.resolveFor(actor);
 
         String title = String.valueOf(elementTitle.getText());
+        System.out.println("Title: " + title);
         String titleSong = actor.recall("song");
+        System.out.println("Title Song: " + titleSong);
 
         return titleSong.equals(title);
 

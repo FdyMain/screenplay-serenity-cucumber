@@ -1,22 +1,22 @@
 package com.fdymain.tasks;
 
-import com.fdymain.interactions.SelectRandomSong;
+import com.fdymain.ui.TendenciesUi;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class SelectSongTask implements Task {
+public class SelectMusicTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                SelectRandomSong.random()
+                Click.on(TendenciesUi.BTN_MUSIC)
         );
-
     }
 
-    public static SelectSongTask selectSong() {
-        return instrumented(SelectSongTask.class);
+    public static SelectMusicTask selectMusic() {
+        return instrumented(SelectMusicTask.class);
     }
 }
